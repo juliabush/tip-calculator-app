@@ -12,39 +12,45 @@
 <body>
 <main class="calculator-website__container">
   <img src="/images/logo.svg" alt="" class="company__logo">
-  <article class="calculator-component__container">
-        <p class="bill__label">Bill</p>
-        <input type="number" class="input bill">
-<p class="tip-buttons__label">
-  Select Tip %
-</p>
-<section class="tip-buttons__grid">
-  <button>5%</button>
-  <button>10%</button>
-  <button>15%</button>
-  <button>25%</button>
-  <button>50%</button>
-  <input type="number" placeholder="Custom" class="input tip" id="tip"></input>
-</section>
-<p class="ppl-label">Number of People</p>
-<input type="number" class="input ppl">
-<section class="tip-result__conatiner">
-  <div class="tip-flex__row">
-    <div class="tip-mini__flex-column">
-      <p class="tip-title">Tip Amount</p>
-  <p class="tip-caption">/ per person</p>
+  <section class="desktop__grid">
+    <section class="column-1">
+      <article class="calculator-component__container">
+            <p class="bill__label">Bill</p>
+            <input type="number" class="input bill">
+      <p class="tip-buttons__label">
+      Select Tip %
+      </p>
+      <section class="tip-buttons__grid">
+      <button>5%</button>
+      <button>10%</button>
+      <button>15%</button>
+      <button>25%</button>
+      <button>50%</button>
+      <input type="number" placeholder="Custom" class="input tip" id="tip"></input>
+      </section>
+      <p class="ppl-label">Number of People</p>
+      <input type="number" class="input ppl">
+    </section>
+    <section class="tip-result__conatiner column-2">
+    <div class="tip__desktop-flex">
+      <div class="tip-flex__row">
+        <div class="tip-mini__flex-column">
+          <p class="tip-title">Tip Amount</p>
+      <p class="tip-caption">/ per person</p>
+        </div>
+        <div class="tip-amount  result">0$</div>
+      </div>
+      <div class="tip-flex__row">
+        <div class="tip-mini__flex-column">
+          <p class="tip-title">Total</p>
+          <p class="tip-caption">/ all people</p>
+        </div>
+        <div class="tip-amount__total  result">0$</div>
+      </div>
     </div>
-    <div class="tip-amount  result">0$</div>
-  </div>
-  <div class="tip-flex__row">
-    <div class="tip-mini__flex-column">
-      <p class="tip-title">Total</p>
-      <p class="tip-caption">/ all people</p>
-    </div>
-    <div class="tip-amount__total  result">0$</div>
-  </div>
-  <button class="reset-button">Reset</button>
-</section>
+    <button class="reset-button">Reset</button>
+    </section>
+  </section>
   </article>
 </main>
 </body>
