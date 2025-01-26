@@ -109,7 +109,7 @@ input::-webkit-inner-spin-button {
    cursor: pointer;
   }
   input:focus{
-    outline: 2px solid var(--clr-Verydarkcyan);
+    outline: 2px solid var(--clr-Strongcyan);
   }
   .bill {
     background-image: url(/images/icon-dollar.svg);
@@ -134,7 +134,7 @@ input::-webkit-inner-spin-button {
   .tip:focus {
     outline: 2px solid var(--clr-Strongcyan);
   }
-  button {
+  .butt {
     padding: .2rem;
     font-size: var(--font-size-inputs);
     border: transparent;
@@ -143,8 +143,12 @@ input::-webkit-inner-spin-button {
     color: #ffffffe8;
     cursor: pointer;
   }
-  button:focus {
+  .butt:focus {
     outline: 4px solid var(--clr-Strongcyan);
+    background-color: var(--clr-Verydarkcyan);
+  }
+  .butt:hover {
+    background-color: var(--clr-Strongcyan);
   }
   .tip-buttons__label {
     margin-bottom: 1rem;
@@ -185,6 +189,11 @@ input::-webkit-inner-spin-button {
     letter-spacing: 1px;
     color: var(--clr-Verydarkcyan);
     background-color: var(--clr-Strongcyan);
+    border: transparent;
+    border-radius: .3rem;
+  }
+  .reset-button:hover {
+    background-color: var(--clr-Lightgrayishcyan);
   }
   .reset-button:focus {
     outline: 3px solid var(--clr-White);
@@ -202,11 +211,15 @@ input::-webkit-inner-spin-button {
     color: white;
   }
   @media (min-width:840px) {
+    article {
+        display: grid;
+    }
     .desktop__grid {
         display: flex;
         background-color: white;
         padding: 1.5rem;
         border-radius: 1rem;
+        box-shadow: 0px 2px 8px rgba(16, 63, 58, 0.205);
     }
     .calculator-component__container {
         max-width: none;

@@ -16,23 +16,23 @@
     <section class="column-1">
       <article class="calculator-component__container">
             <p class="bill__label">Bill</p>
-            <input type="number" class="input bill">
+            <input type="number" class="input bill" id="billvalue">
       <p class="tip-buttons__label">
       Select Tip %
       </p>
       <section class="tip-buttons__grid">
-      <button>5%</button>
-      <button>10%</button>
-      <button>15%</button>
-      <button>25%</button>
-      <button>50%</button>
-      <input type="number" placeholder="Custom" class="input tip" id="tip"></input>
+        <button class="butt" data-number>5%</button>
+        <button class="butt" data-number>10%</button>
+        <button class="butt" data-number>15%</button>
+        <button class="butt" data-number>25%</button>
+        <button class="butt" data-number>50%</button>
+      <input type="number" placeholder="Custom" class="input tip" id="tipcustom"></input>
       </section>
       <p class="ppl-label">Number of People</p>
-      <input type="number" class="input ppl">
+      <input type="number" class="input ppl" id="people">
     </section>
     <section class="tip-result__conatiner column-2">
-    <div class="tip__desktop-flex">
+    <div class="tips__desktop-flex">
       <div class="tip-flex__row">
         <div class="tip-mini__flex-column">
           <p class="tip-title">Tip Amount</p>
@@ -48,7 +48,7 @@
         <div class="tip-amount__total  result">0$</div>
       </div>
     </div>
-    <button class="reset-button">Reset</button>
+    <button class="reset-button" id="reset">Reset</button>
     </section>
   </section>
   </article>
