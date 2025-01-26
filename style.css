@@ -149,19 +149,18 @@ input::-webkit-inner-spin-button {
   .tip-buttons__label {
     margin-bottom: 1rem;
   }
-  .calculator-component__container {
+  .desktop__grid {
     background-color: var(--clr-White);
     padding: 1.5rem;
     border-radius: 1rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     display: grid;
-    max-width: 400px;
   }
   .tip-result__conatiner {
     background-color: var(--clr-Verydarkcyan);
     border-radius: 1rem;
-    padding: 1.5em;
+    padding: 1.5rem;
   }
   .tip-buttons__grid {
     display: grid;
@@ -202,7 +201,7 @@ input::-webkit-inner-spin-button {
     font-size: 1.5rem;
     color: white;
   }
-  @media (min-width:800px) {
+  @media (min-width:840px) {
     .desktop__grid {
         display: flex;
         background-color: white;
@@ -236,11 +235,8 @@ input::-webkit-inner-spin-button {
       .tip-result__conatiner {
         display: flex;
         flex-direction: column;
-      }
-      .column-2 {
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
+        max-width: none;
       }
       .tip__desktop-flex {
         margin-top: 2rem;
@@ -250,5 +246,9 @@ input::-webkit-inner-spin-button {
       }
       .result {
         font-size: 2.5rem;
+      }
+      .company__logo {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
       }
   }
