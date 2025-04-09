@@ -21,11 +21,11 @@
       Select Tip %
       </p>
       <section class="tip-buttons__grid">
-        <button class="butt" data-number>5%</button>
-        <button class="butt" data-number>10%</button>
-        <button class="butt" data-number>15%</button>
-        <button class="butt" data-number>25%</button>
-        <button class="butt" data-number>50%</button>
+        <button class="button" data-number="5">5%</button>
+        <button class="button" data-number="10">10%</button>
+        <button class="button" data-number="15">15%</button>
+        <button class="button" data-number="25">25%</button>
+        <button class="button" data-number="50">50%</button>
       <input type="number" placeholder="Custom" class="input tip" id="tipcustom"></input>
       </section>
       <p class="ppl-label">Number of People</p>
@@ -45,10 +45,13 @@
           <p class="tip-title">Total</p>
           <p class="tip-caption">/ all people</p>
         </div>
-        <div class="tip-amount__total  result">0$</div>
+        <div class="tip-amount__total  total-result">0$</div>
       </div>
     </div>
-    <button class="reset-button" id="reset">Reset</button>
+    <div class="user-butttons">
+      <button class="reset-button calculate" id="calculate">Calculate</button>
+      <button class="reset-button" id="reset">Reset</button>
+    </div>
     </section>
   </section>
   </article>
