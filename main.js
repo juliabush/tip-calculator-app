@@ -30,3 +30,23 @@ tipInputButtons.forEach((inputButton) => {
     updateResults(tipAmount, totalAmountValue);
   });
 });
+
+// Calculate tip for the custom percentage
+function calculateCustomTip() {
+  amount = parseFloat(billInput.value);
+  people = peopleInput.value;
+  cutomTipPercentage = parseFloat(customTipInput.value) / 100;
+
+  const customTip = (amount * customtipPercentage) / people;
+  const totalAmountValue = amount / people + customTip;
+
+  updateResults(customTip, totalAmountValue);
+}
+
+// Code for the clear results button
+document.querySelector(".reset-button").addEventListener("click", () => {
+  totalAmount.innerHTML = "$0.00";
+  totalAmountPerPerson.innerHTML = "$0.00";
+  billInput.value = "";
+  peopleInput.value = "";
+});
