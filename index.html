@@ -11,7 +11,7 @@
 </head>
 <body>
 <main class="calculator-website__container">
-  <img src="/images/logo.svg" alt="" class="company__logo">
+  <img src="/images/logo.svg" alt="Splitter Logo" class="company__logo">
   <section class="desktop__grid">
     <section class="column-1">
       <article class="calculator-component__container">
@@ -26,7 +26,7 @@
         <button class="button" data-number="15">15%</button>
         <button class="button" data-number="25">25%</button>
         <button class="button" data-number="50">50%</button>
-      <input type="number" placeholder="Custom" class="input tip" id="tipcustom"></input>
+      <input type="number" placeholder="Custom" class="input tip" id="tipcustom">
       </section>
       <p class="ppl-label">Number of People</p>
       <input type="number" class="input ppl" id="people">
@@ -49,12 +49,19 @@
       </div>
     </div>
     <div class="user-butttons">
-      <button class="reset-button calculate" id="calculate">Calculate</button>
       <button class="reset-button" id="reset">Reset</button>
     </div>
-    </section>
+   </section>
   </section>
   </article>
 </main>
+<!-- This code removes the hover or focus states from a button so they dont stay focused for user clarity -->
+<script>
+  document.querySelectorAll("button").forEach(element => {
+    element.addEventListener("click", () => {
+      element.blur();
+    });
+  });
+</script>
 </body>
 </html>
